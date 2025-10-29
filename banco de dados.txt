@@ -1,0 +1,7 @@
+Banco de Dados:
+
+create database hortifruti;
+use hortifruti;
+create table produto( id_produto int primary key auto_increment, nome varchar(20) not null, valor decimal(10,2) not null );
+create table cliente( id_cliente int primary key auto_increment, nome varchar(40) not null, telefone varchar(20) not null );
+create table vendas( id_vendas int primary key auto_increment, fk_for_nomep varchar(30) not null, fk_for_nomec varchar(30) not null );
